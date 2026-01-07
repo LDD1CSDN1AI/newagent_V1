@@ -301,7 +301,25 @@ const Apps = () => {
         { value: 'all', key: 'all', label: '主页', text: t('app.types.area'), icon: <RiHome3Line className='w-[14px] h-[14px]' />, selectIcon: <Image src={area} alt='img' width={14} height={14} /> },
         { value: 'area', key: 'area', label: '个人空间', text: t('app.types.area'), icon: <Image src={area} alt='img' width={14} height={14} /> }, //<UserOutlined className='w-[14px] h-[14px]' />
         { value: 'projectSpace', key: 'projectSpace', label: '项目空间', text: t('app.types.projectSpace'), icon: <TeamOutlined className='w-[14px] h-[14px]' /> },
-        { value: 'tansou', key: 'tansou', type: 'group', label: (<div className={styles.tansuo}> 探索</div >) },
+        {
+          value: 'tansou',
+          key: 'tansou',
+          type: 'group',
+          label: (
+            <div
+              className={styles.tansuo}
+              style={{
+                display: 'flex',
+                alignItems: 'center', // 垂直居中
+                paddingLeft: '8px', // 与图标左对齐（根据实际图标缩进调整）
+                height: '24px',
+                fontSize: '14px'
+              }}
+            >
+              探索
+            </div>
+          )
+        },
         { value: 'newDataset', key: 'newDataset', label: '知识库', text: t('app.types.workflow'), icon: <FileSearchOutlined className='w-[14px] h-[14px]' /> },
 
         // { value: 'mcpManage', key: 'mcpManage', label: 'mcp管理', text: t('app.types.workflow'), icon: <UsbOutlined className='w-[14px] h-[14px]' /> },
@@ -332,7 +350,25 @@ const Apps = () => {
         { value: 'area', key: 'area', label: '个人空间', text: t('app.types.area'), icon: <Image src={area} alt='img' width={14} height={14} />, selectIcon: <Image src={selectArea} alt='img' width={14} height={14} /> }, //<UserOutlined className='w-[14px] h-[14px]' />
         { value: 'projectSpace', key: 'projectSpace', label: '项目空间', text: t('app.types.projectSpace'), icon: <Image src={projectSpace} alt='img' width={14} height={14} />, selectIcon: <Image src={selectProjectSpace} alt='img' width={14} height={14} /> },
         { value: 'dcoos', key: 'dcoos', label: '能力上线', text: '能力上线', icon: <Image src={dcoos} alt='img' width={14} height={14} />, selectIcon: <Image src={selectedDcoos} alt='img' width={14} height={14} /> },
-        { value: 'tansou', key: 'tansou', type: 'group', label: (<div className={styles.tansuo}> 探索</div >) },
+        {
+          value: 'tansou',
+          key: 'tansou',
+          type: 'group',
+          label: (
+            <div
+              className={styles.tansuo}
+              style={{
+                display: 'flex',
+                alignItems: 'center', // 垂直居中
+                paddingLeft: '8px', // 与图标左对齐（根据实际图标缩进调整）
+                height: '24px',
+                fontSize: '14px'
+              }}
+            >
+              探索
+            </div>
+          )
+        },
         { value: 'newDataset', key: 'newDataset', label: '知识库', text: t('app.types.workflow'), icon: <FileSearchOutlined className='w-[14px] h-[14px]' /> },
 
         // { value: 'mcpManage', key: 'mcpManage', label: 'mcp管理', text: t('app.types.workflow'), icon: <UsbOutlined className='w-[14px] h-[14px]' /> },

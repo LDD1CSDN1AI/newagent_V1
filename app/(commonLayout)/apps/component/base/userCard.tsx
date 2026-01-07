@@ -470,7 +470,7 @@ const UserCard: React.FC<Props> = (props) => {
               </div>
             </div>
           </div>
-          <div style={{ fontFamily: 'Source Han Sans-Regular' }} className={cn('w-full text-[#666666] mt-[8px] leading-[2vh]', styles.overflowText)}>{data?.description || plugin?.desc}</div>
+          <div style={{ fontFamily: 'Source Han Sans-Regular', height: '50px', overflow: 'hidden', }} className={cn('w-full text-[#666666] mt-[8px] leading-[2vh]', styles.overflowText)}>{data?.description || plugin?.desc}</div>
           <div className='absolute w-[40px] h-[3.7vh] right-[15px] bottom-[15px] hover:bg-[#EEEEEE] rounded-[8px] flex items-center justify-center' style={{ lineHeight: '20px' }} onClick={(e) => {
             e.stopPropagation()
           }}>

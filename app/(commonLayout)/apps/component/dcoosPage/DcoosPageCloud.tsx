@@ -339,7 +339,7 @@ const DcoosPageCloud: React.FC<Props> = ({ setActiveTab, data, mutate }) => {
             cancelText="取消"
           >
             <span style={{ color: 'red', cursor: 'pointer' }}
-              onClick={() => handleUpdateClick(rd)}>下线</span>
+            >下线</span>
           </Popconfirm>
 
         </Space>
